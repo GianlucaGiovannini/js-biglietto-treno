@@ -35,9 +35,9 @@ const prezzo_over_65 = prezzo_utente * 0.6;
 
 // stampa il prezzo 
 if (età_utente < 18) {
-    document.getElementById(prezzo_finale).innerHTML = prezzo_minori;
+    document.getElementById("prezzo_finale").innerHTML = prezzo_minori;
 } else if (età_utente > 65) {
-    document.getElementById(prezzo_finale).innerHTML = prezzo_over_65;
+    document.getElementById("prezzo_finale").innerHTML = prezzo_over_65;
 } else {
-    document.getElementById(prezzo_finale).innerHTML = prezzo_utente;
+    document.getElementById("prezzo_finale").innerHTML = prezzo_utente;
 }
