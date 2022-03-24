@@ -27,6 +27,16 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.passa {
+    font-size: 2.3rem;
+    color: darkblue;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .card {
@@ -43,8 +53,8 @@ img {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    transform: skew(10deg, 10deg);
-    filter: blur(1px);
+    transform: skew(17deg, 28deg);
+    filter: blur(4px);
     transition: 1s;
 }
 
