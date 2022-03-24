@@ -31,13 +31,14 @@ const prezzo_utente = prezzo_km * km_percorso;
 
 // calcolo sconti per età
 const prezzo_minori = prezzo_utente * 0.8;
+
 const prezzo_over_65 = prezzo_utente * 0.6;
 
 // stampa il prezzo 
 if (età_utente < 18) {
-    document.getElementById("prezzo_finale").innerHTML = prezzo_minori;
+    document.getElementById("prezzo_finale").innerHTML = "€ " + prezzo_minori.toFixed(2);
 } else if (età_utente > 65) {
-    document.getElementById("prezzo_finale").innerHTML = prezzo_over_65;
+    document.getElementById("prezzo_finale").innerHTML = "€ " + prezzo_over_65.toFixed(2);
 } else {
-    document.getElementById("prezzo_finale").innerHTML = prezzo_utente;
+    document.getElementById("prezzo_finale").innerHTML = "€ " + prezzo_utente.toFixed(2);
 }
