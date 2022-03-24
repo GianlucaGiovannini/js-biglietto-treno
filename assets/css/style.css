@@ -21,11 +21,6 @@ img {
     text-transform: capitalize;
 }
 
-.box_shadow {
-    padding: 5px 50px;
-    box-shadow: 0px 7px 12px 0px #1f1f1f;
-}
-
 .container {
     width: 100vw;
     height: 100vh;
@@ -48,6 +43,23 @@ img {
     gap: 1rem;
     justify-content: center;
     align-items: center;
+    transform: skew(10deg, 10deg);
+    filter: blur(1px);
+    transition: 1s;
+}
+
+.card:hover {
+    transform: skew(0deg, 0deg);
+    filter: blur(0);
+}
+
+.box_shadow {
+    padding: 5px 50px;
+    box-shadow: 0px 7px 12px 0px #1f1f1f;
+}
+
+#prezzo_finale:hover {
+    box-shadow: inset 0 3px 20px 6px white;
 }
 
 @media screen and (max-width:1200px) {
