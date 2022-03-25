@@ -17,8 +17,13 @@ document.getElementById("user_name").innerHTML = user_name;
 
 //chiedere all'utente il numero di km che vuole percorrere e l'età del che ha
 const km_percorso = Number(prompt("Quanti km vuoi percorrere?"))
+if (isNaN(km_percorso)) {
+    alert("Inserisci il numero di km")
+}
 const età_utente = Number(prompt("quanti anni hai ?"));
-
+if (isNaN(età_utente)) {
+    alert("Inserisci un numero")
+}
 
 
 // prezzi
